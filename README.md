@@ -12,19 +12,37 @@ This is a classic problem.
 
 Version-1 "Brute Force"
 ```markdown
-Syntax highlighted code block
+  string longestPalindrome(string s) {
+    int max = 1;
+    string maxx = "";
+    for (int i = 0; i < s.size(); i++) {
+      for (int j = 2; j <= s.size() - i; j++) {
+        int tmp = check(s.substr(i, j));
+        if (tmp > max) {
+          max = tmp;
+          maxx = s.substr(i, j);
+        }
+      }
+    }
+    if (max == 1) {
+      return s.substr(0, 1);
+    }
+    return maxx;
+  }
 
-# Header 1
-## Header 2
-### Header 3
+  string convert(string s) {
+    string ss = s;
+    for (int i = 0; i < s.size(); i++) {
+      ss[i] = s[s.size()-i-1];
+    }
+    return ss;
+  }
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+  int check(string s) {
+    string ss = convert(s);
+    if (strcmp(s.c_str(), ss.c_str()) == 0) {
+      return s.size();
+    }
+    return 0;
+  }
 ```
