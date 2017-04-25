@@ -12,6 +12,7 @@ This is a classic problem.
 
 Version-1 "Brute Force"
 ```markdown
+```javascript
   string longestPalindrome(string s) {
     int max = 1;
     string maxx = "";
@@ -45,4 +46,5 @@ Version-1 "Brute Force"
     }
     return 0;
   }
+```
 ```
