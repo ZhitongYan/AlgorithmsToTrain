@@ -8,3 +8,23 @@ Talk is cheap, just begin the travel of algorithms :)
 
 ### Longest Palindromic Substring
 
+This is a classic problem.
+
+Version-1 "Brute Force"
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
