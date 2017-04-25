@@ -11,7 +11,7 @@ Talk is cheap, just begin the travel of algorithms :)
 This is a classic problem.
 
 Version-1 "Brute Force"
-First, find out all possible palindromic substring's start position and length, which is represented by "i" and "j" in the code below. Second, check if this substring is palindromic, if so and the length exceeds current max, update max and record this substring. After the traversal, finally we will get a answer.
+  First, find out all possible palindromic substring's start position and length, which is represented by "i" and "j" in the code below. Second, check if this substring is palindromic, if so and the length exceeds current max, update max and record this substring. After the traversal, finally we will get a answer.
 ```cpp
 string convert(string s) {
   string ss = s;
