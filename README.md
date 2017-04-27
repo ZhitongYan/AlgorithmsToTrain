@@ -47,3 +47,14 @@ string longestPalindrome(string s) {
   return maxx;
 }
 ```
+Aparently, longestPalindrome() is O(n^3) in time.
+
+Version-2 "Dynamic Programming" <br/>
+First, we get this state equation:
+```
+p[i,j] = 1; if str.substr(i, j-i+1) is palindrome
+p[i,j] = 0; if str.substr(i, j-i+1) is not palindrome
+
+p[i,j] = p[i+1,j-1]; if str[i] == str[j]
+p[i,j] = 0; if str[i] != str[j]
+```
